@@ -83,7 +83,7 @@ if(isset($_POST['form_login']))
       <?php
         if(isset($error_message))
         { ?>
-          <div class="error">
+          <div class="alert alert-danger">
               <p class=""><?php echo $error_message ; ?></p>
           </div>
           <br />
