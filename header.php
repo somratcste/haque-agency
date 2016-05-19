@@ -1,111 +1,204 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HAQUE AGENCIES | Dashboard</title>
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- Bootstrap 3.3.5 -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
-    <!-- AdminLTE Skins. Choose a skin from the css/skins
-         folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
-    <!-- iCheck -->
-    <link rel="stylesheet" href="plugins/iCheck/flat/blue.css">
-    <!-- Morris chart -->
-    <link rel="stylesheet" href="plugins/morris/morris.css">
-    <!-- jvectormap -->
-    <link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap-1.2.2.css">
-    <!-- Date Picker -->
-    <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
-    <!-- Daterange picker -->
-    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker-bs3.css">
-    <!-- bootstrap wysihtml5 - text editor -->
-    <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home | HAQUE-Agencies</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/sub-menu.css">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body class="hold-transition skin-blue layout-boxed sidebar-mini">
-    <div class="wrapper">
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+</head><!--/head-->
 
-      <header class="main-header">
-        <!-- Logo -->
-        <a href="admin.php" class="logo">
-          <!-- mini logo for sidebar mini 50x50 pixels -->
-          <span class="logo-mini"><b>H </b>A</span>
-          <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>HAQUE </b>AGENCIES</span>
-        </a>
-        <!-- Header Navbar: style can be found in header.less -->
-        <nav class="navbar navbar-static-top" role="navigation">
-          <!-- Sidebar toggle button-->
-          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-            <span class="sr-only">Toggle navigation</span>
-          </a>
-          <div class="navbar-custom-menu">
-            <ul class="nav navbar-nav"> 
+<body>
+	<header id="header"><!--header-->
+		<div class="header_top"><!--header_top-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="contactinfo">
+							<ul class="nav nav-pills">
+								<li><a href="#"><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i> info@domain.com</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="social-icons pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header_top-->
+		
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="logo pull-left">
+							<a href="index.php"><img src="images/home/logo.png" alt="" /></a>
+							
+						</div>
 
-              <li class="dropdown user user-menu">
-                <a href="index.php" class="dropdown-toggle" > Logout
-                  <!-- <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image"> -->
-                  <!-- <span class="user-image">Logout</span> -->
-                </a>
-              </li>             
-          
-              <li class="dropdown user user-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Developer
-                  <!-- <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                  <span class="hidden-xs">About Developer</span> -->
-                </a>
-                <ul class="dropdown-menu">
-                  <!-- User image -->
-                  <li class="user-header">
-                    <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                    <p>
-                      Nazmul Hossain || Software Eng.
-                      <small>Hello : 01823387518</small>
-                    </p>
-                  </li>
-                  <!-- Menu Body -->
-                  <li class="user-body">
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Software</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Application</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Website</a>
-                    </div>
-                  </li>
-                  <!-- Menu Footer-->
-                  <li class="user-footer">
-                    <div class="pull-left">
-                      <a href="http://somrat.info/" class="btn btn-default btn-flat">Profile</a>
-                    </div>
-                    <div class="pull-right">
-                      <a href="http://facebook.com/somratcste" class="btn btn-default btn-flat">Facebook</a>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <!-- Control Sidebar Toggle Button -->
-              <li>
-                <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+					</div>
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="index.php"><i class="fa fa-user"></i> Home</a></li>
+								<li><a href="contact-us.php"><i class="fa fa-crosshairs"></i>Contact</a></li>
+								<li><a href="login.php"><i class="fa fa-lock"></i> Login</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+	
+		<div class="header-bottom"><!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+
+
+
+						<div class="mainmenu pull-left" id="cssmenu">
+
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a href="index.php" class="active">Home</a></li>
+
+							<!--
+								<ul class="nav navbar-nav collapse navbar-collapse">
+									<li><a href="index.php" class="active">Home</a></li>  -->
+
+							<?php
+							include("connection.php");
+
+
+							$statement = $db->prepare("SELECT DISTINCT com_id FROM table_products");
+							$statement->execute(array());
+
+							$companies = $statement->fetchAll(PDO::FETCH_ASSOC);
+							//echo count($companies);
+
+							foreach ($companies as $com) {
+
+								$company_id = $com['com_id'];
+
+								$statement1 = $db->prepare("SELECT com_name FROM table_companies WHERE com_id = ?");
+								$statement1->execute(array($company_id));
+
+								$company_name = $statement1->fetch()["com_name"];
+
+								$statement2 = $db->prepare("SELECT DISTINCT cat_id FROM table_products WHERE com_id = ?");
+								$statement2->execute(array($company_id));
+
+								$categories= $statement2->fetchAll(PDO::FETCH_ASSOC);
+
+								if(count($categories) == 0)
+								{
+							?>
+									<li><a href="products.php?com_id=<?php echo $company_id; ?>"><?php echo $company_name; ?></a></li>
+							<?php
+								}
+								else
+								{
+							?>
+									<li class="dropdown has-sub"><a href="products.php?com_id=<?php echo $company_id; ?>"><?php echo $company_name; ?></a>
+									<ul role="menu" class="sub-menu">
+							<?php
+
+									foreach ($categories as $cat) {
+
+										$category_id = $cat["cat_id"];
+
+										$statement3 = $db->prepare("SELECT * FROM table_categories WHERE cat_id = ?");
+										$statement3->execute(array($category_id));
+
+										$category_name = $statement3->fetch()["cat_name"];
+
+										$statement3 = $db->prepare("SELECT DISTINCT size_id FROM table_products WHERE cat_id = ? AND com_id = ? ");
+										$statement3->execute(array($category_id, $company_id));
+
+								  		$sizes= $statement3->fetchAll(PDO::FETCH_ASSOC);
+
+								  		if(count($sizes) == 0)
+								  		{
+							?>
+							  				<li class="has-sub"><a href="products.php?com_id=<?php echo $company_id; ?>&amp;cat_id=<?php echo $category_id; ?>"><?php echo $category_name; ?></a></li>
+							<?php
+								  		}
+								  		else
+								  		{
+							?>
+							  				<li class="has-sub"><a href="products.php?com_id=<?php echo $company_id; ?>&amp;cat_id=<?php echo $category_id; ?>"><?php echo $category_name; ?></a>
+							  				<ul>
+							<?php
+											foreach ($sizes as $s) {
+
+												$size_id = $s["size_id"];	
+
+												$statement4 = $db->prepare("SELECT * FROM table_sizes where size_id = ?");
+												$statement4->execute(array($size_id));
+
+												$size_name = $statement4->fetch()["size_name"];
+							?>		
+												<li><a href="products.php?com_id=<?php echo $company_id; ?>&amp;cat_id=<?php echo $category_id; ?>&amp;size_id=<?php echo $size_id; ?>"><span><?php echo $size_name; ?></span></a></li>
+							<?php
+											}
+							?>
+											</ul>
+											</li>
+							<?php
+										}
+							  		}
+							?>
+									</ul>
+									</li>
+							<?php
+								}
+							}
+							?>
+							</ul>
+							</div>
+
+
+
+
+					
+					
+				</div>
+			</div>
+		</div><!--/header-bottom-->
+	</header><!--/header-->
