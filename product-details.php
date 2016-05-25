@@ -45,7 +45,7 @@ else {
 				<div class="product-details"><!--product-details-->
 					<div class="col-sm-4">
 						<div class="view-product">
-							<img id="zoom_01" src="images/product-details/<?php echo $product_image ; ?>"  alt="" data-zoom-image="images/product-details/<?php echo $product_image ; ?>" />
+							<img id="zoom_01" src="administrator/dist/img/product-images/<?php echo $product_image ; ?>"  alt="" data-zoom-image="administrator/dist/img/product-images/<?php echo $product_image ; ?>" />
 						</div>
 
 					</div>

@@ -425,12 +425,12 @@ $size_name = $statement3->fetch()["size_name"];
 
                   <td><form method="POST" action="message.php?id=<?php echo $row['p_id']; ?>" accept-charset="UTF-8" style="display:inline"><button class="btn btn-xs btn-danger" type="button" data-toggle="modal" data-target="#confirmDelete" data-title="Delete Product" data-message="Are you sure you want to delete ?"> <i class="glyphicon glyphicon-trash"></i> Delete</button></form></td>
 
-                  <td><a href="" data-toggle="modal" data-target="#product_increment"><img src="../dist/img/plus.jpg" alt="" title="" border="0" /></a> || <a href="" data-toggle="modal" data-target="#product_decrement"><img src="../dist/img/minus.jpg" alt="" title="" border="0" /></a> </td>
+                  <td><a href="" data-toggle="modal" data-target="#product_increment<?php echo $i; ?>"><img src="../dist/img/plus.jpg" alt="" title="" border="0" /></a> || <a href="" data-toggle="modal" data-target="#product_decrement<?php echo $i; ?>"><img src="../dist/img/minus.jpg" alt="" title="" border="0" /></a> </td>
 
 
 
                   <!--product increment modal -->
-                  <div class="modal fade" id="product_increment" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+                  <div class="modal fade" id="product_increment<?php echo $i; ?>" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
                       <div class="modal-dialog">
                           <div class="modal-content">
                               <div class="modal-header">
@@ -515,7 +515,7 @@ $size_name = $statement3->fetch()["size_name"];
 
 
                   <!--product decrement modal -->
-                  <div class="modal fade" id="product_decrement" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+                  <div class="modal fade" id="product_decrement<?php echo $i; ?>" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
                       <div class="modal-dialog">
                           <div class="modal-content">
                               <div class="modal-header">

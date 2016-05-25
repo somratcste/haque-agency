@@ -59,7 +59,7 @@
 			<div class="container">
 				<div class="row">
 					<p class="pull-left">Copyright © 2015 HAQUE-AGENCIES . All rights reserved.</p>
-					<p class="pull-right">Designed by <span><a target="_blank" href="http://www.somrat.info">SOMRAT</a></span></p>
+					<p class="pull-right">Designed by <span><a target="_blank" href="http://www.somrat.info">SOMRAT IT</a></span></p>
 				</div>
 			</div>
 		</div>

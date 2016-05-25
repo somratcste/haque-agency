@@ -68,7 +68,7 @@ if (isset($_GET['com_id']) & isset($_GET['cat_id']) & isset($_GET['size_id'])) {
 						<div class="product-image-wrapper">
 							<div class="single-products">
 									<div class="productinfo text-center">
-										<a href="product-details.php?p_id=<?php echo $p_id; ?>"><img src="images/product-details/<?php echo $product["p_image"] ; ?>" alt="" /></a>
+										<a href="product-details.php?p_id=<?php echo $p_id; ?>"><img src="administrator/dist/img/product-images/<?php echo $product["p_image"] ; ?>" alt="" /></a>
 										<!--<h2>302 BR</h2>-->
 										<h3><?php echo $product["p_name"];?></h3>
 									</div>

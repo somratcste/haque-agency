@@ -78,10 +78,10 @@ $size_name = $statement3->fetch()["size_name"];
               <td><?php echo $i ; ?></td>
                   <td><?php echo $row['p_name']; ?></td>
                   <td><?php echo $row['p_price']; ?></td>
-                  <td><a href="" data-toggle="modal" data-target="#price_increment"><img src="../dist/img/price_up.png" alt="" title="" border="0" /></a> || <a href="" data-toggle="modal" data-target="#price_decrement" ><img src="../dist/img/price_down.png" alt="" title="" border="0" /></a> </td>
+                  <td><a href="" data-toggle="modal" data-target="#price_increment<?php echo $i ; ?>"><img src="../dist/img/price_up.png" alt="" title="" border="0" /></a> || <a href="" data-toggle="modal" data-target="#price_decrement<?php echo $i ; ?>" ><img src="../dist/img/price_down.png" alt="" title="" border="0" /></a> </td>
 
                   <!--price increment modal -->
-                  <div class="modal fade" id="price_increment" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+                  <div class="modal fade" id="price_increment<?php echo $i ; ?>" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
                       <div class="modal-dialog">
                           <div class="modal-content">
                               <div class="modal-header">
@@ -117,7 +117,7 @@ $size_name = $statement3->fetch()["size_name"];
                   <!--price increment modal End-->
 
                    <!--price decrement modal -->
-                  <div class="modal fade" id="price_decrement" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+                  <div class="modal fade" id="price_decrement<?php echo $i ; ?>" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
                       <div class="modal-dialog">
                           <div class="modal-content">
                               <div class="modal-header">
@@ -399,14 +399,15 @@ $size_name = $statement3->fetch()["size_name"];
 <!--Product edit modal end -->
 
 
-                  <td><form method="POST" action="message.php?id=<?php echo $row['p_id']; ?>" accept-charset="UTF-8" style="display:inline"><button class="btn btn-xs btn-danger" type="button" data-toggle="modal" data-target="#confirmDelete" data-title="Delete Product" data-message="Are you sure you want to delete ?"> <i class="glyphicon glyphicon-trash"></i> Delete</button></form></td>
+                  <td><form method="post" action="message.php?id=<?php echo $row['p_id']; ?>" accept-charset="UTF-8" style="display:inline"><button class="btn btn-xs btn-danger" type="button" data-toggle="modal" data-target="#confirmDelete" data-title="Delete Product" data-message="Are you sure you want to delete ?"> <i class="glyphicon glyphicon-trash"></i> Delete</button></form></td>
+                  
 
-                  <td><a href="" data-toggle="modal" data-target="#product_increment"><img src="../dist/img/plus.jpg" alt="" title="" border="0" /></a> || <a href="" data-toggle="modal" data-target="#product_decrement"><img src="../dist/img/minus.jpg" alt="" title="" border="0" /></a> </td>
+                   <td><a href="" data-toggle="modal" data-target="#product_increment<?php echo $i; ?>"><img src="../dist/img/plus.jpg" alt="" title="" border="0" /></a> || <a href="" data-toggle="modal" data-target="#product_decrement<?php echo $i; ?>"><img src="../dist/img/minus.jpg" alt="" title="" border="0" /></a> </td>
 
 
 
                   <!--product increment modal -->
-                  <div class="modal fade" id="product_increment" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+                  <div class="modal fade" id="product_increment<?php echo $i; ?>" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
                       <div class="modal-dialog">
                           <div class="modal-content">
                               <div class="modal-header">
@@ -424,6 +425,7 @@ $size_name = $statement3->fetch()["size_name"];
                           
                             <!-- form start -->
                             <form class="form-horizontal" action="message.php?pinid=<?php echo $row['p_id']; ?>" method="post" enctype="multipart/formdata">
+
 
                               <div class="box-body">
                                 <div class="form-group">
@@ -465,6 +467,7 @@ $size_name = $statement3->fetch()["size_name"];
 
                                   <option value="<?php echo $row3['c_number']; ?>"><?php echo $row3['c_number'] ; ?></option>
 
+
                                   <?php
                                 
                                   }
@@ -490,8 +493,10 @@ $size_name = $statement3->fetch()["size_name"];
                   <!--product increment modal End-->
 
 
+
+
                   <!--product decrement modal -->
-                  <div class="modal fade" id="product_decrement" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+                  <div class="modal fade" id="product_decrement<?php echo $i; ?>" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
                       <div class="modal-dialog">
                           <div class="modal-content">
                               <div class="modal-header">
